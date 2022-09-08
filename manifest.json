@@ -1,0 +1,19 @@
+{
+    "name": "My Custom Extention",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Add Backdoor button for sites",
+    "content_scripts": [
+        {
+            "js": [
+                "init.js"
+            ],
+            "matches": [
+                "*://localhost/WebQA.Admin/AdvancedLogin/Login.aspx",
+                "*://*/*AdvancedLogin/Login.aspx",
+                "*://localhost/WebQA.Admin/AdvancedLogin/Login.aspx?*",
+                "*://*/*AdvancedLogin/Login.aspx?*"
+            ]
+        }
+    ]
+}
